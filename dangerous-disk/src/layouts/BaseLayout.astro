@@ -1,5 +1,5 @@
 ---
-
+import Nav from '../components/Nav.astro';
 ---
 
 <html lang="en">
@@ -8,13 +8,21 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>My Site : About Me</title>
+		<title>Astro Blog</title>
 	</head>
-
 	<body>
-
-		<h1>About Me</h1>
 		
-	</body>
+        <!-- nav -->
+        <Nav />
 
+        <slot />
+
+        <!-- footer -->
+        <footer>
+
+            Footer
+        
+        </footer>
+
+	</body>
 </html>

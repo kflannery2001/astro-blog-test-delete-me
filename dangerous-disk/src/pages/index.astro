@@ -1,39 +1,9 @@
 ---
-const clientName = 'Polytechnic Pros';
-const theCurrentDate = new Date();
-
-const user = {
-    name : 'Victor E. Eagle',
-    age : 100,
-}
-
-const emojiSet = ['🍔', '🌭', '🍟', '🍕'];
+import BaseLayout from "../layouts/BaseLayout.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title> {clientName} </title>
-	</head>
-	<body>
+<BaseLayout>
 
-		<a href="/">Home</a>
-		<a href="/about">About Me</a>
+	<h1>Homepage</h1>
 
-		<h1> {clientName} </h1>
-
-		<p>The mascot is {user.name} and he is {user.age} years old.</p>
-
-		<p>{user.name} loves food. His favorites are:</p>
-
-		<ul>
-			{ emojiSet.map( emoji => <li> {emoji} </li> )};
-		</ul>
-
-
-		<footer>Copyright {theCurrentDate.getFullYear()}</footer>
-	</body>
-</html>
+</BaseLayout>
